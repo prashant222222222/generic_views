@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    body {
+      background: rgb(203, 5, 23);
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>college</h1>
+
+  Name: {{ object.name }} <br>
+  Students:
+  {% for student in object.student_set.all %}
+  <li>{{ student.name }}</li>
+  {% endfor %}
+
+</body>
+
+</html>

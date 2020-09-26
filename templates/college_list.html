@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    body {
+      background: rgb(203, 5, 23);
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>college</h1>
+
+
+  {% for college in colleges %}
+  <li>
+    <a href="{% url 'college' college.pk %}">{{ college.name }}</a>
+  </li>
+  {% endfor %}
+
+</body>
+
+</html>
